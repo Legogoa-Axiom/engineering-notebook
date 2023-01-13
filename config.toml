@@ -1,0 +1,42 @@
+baseURL = "legogoa.in/ftc-engineering-notebook"
+languageCode = "en-us"
+title = "FTC Engineering Notebook"
+themesDir = "../.."
+theme = "hugo-whisper-theme"
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.55.0"
+
+# Controls how many words are printed in the content summary on the docs homepage.
+# See https://gohugo.io/content-management/summaries/
+summaryLength = 30
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Docs"
+    url = "/docs/"
+    weight = 2
+
+[params]
+  google_analytics_id=""
+  homepage_button_link = '/docs'
+  homepage_button_text = 'Our Engineering Notebook'
+  homepage_intro = 'Our engineering notebook for Legogoa Axi0m First Tech challenge'
+  homepage_image = '/teams.gif'
+
+  ## You can enable to add anchor links to header elements
+  # enable_anchor_link = true
+
+  [params.logo]
+      mobile = "/logo.png"
+      standard  = "/logo.png"
